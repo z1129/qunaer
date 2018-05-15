@@ -2,9 +2,16 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
+// 路由配置内容  引入router/index.js文件
 import router from './router'
+import fastClick from "fastclick"
+// 引入重置样式
+import "./assets/styles/reset.css"
+import "./assets/styles/border.css"
 
 Vue.config.productionTip = false
+// 移动端300 毫秒点击延迟的问题
+fastClick.attach(document.body)
 
 /* eslint-disable no-new */
 new Vue({
