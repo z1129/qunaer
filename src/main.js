@@ -11,10 +11,19 @@ import "styles/reset.css"
 import "styles/border.css"
 //  引入iconfont的css
 import iconfont from "styles/iconfont.css"
+//  引入swiper插件
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+//  引入swiper需要的css文件
+import 'swiper/dist/css/swiper.css'
+
 
 Vue.config.productionTip = false
 // 移动端300 毫秒点击延迟的问题
 fastClick.attach(document.body)
+
+// use引入的组件
+Vue.use(VueAwesomeSwiper, /* { default global options } */);
+
 
 /* eslint-disable no-new */
 new Vue({
