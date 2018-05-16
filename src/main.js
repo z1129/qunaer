@@ -6,8 +6,11 @@ import App from './App'
 import router from './router'
 import fastClick from "fastclick"
 // 引入重置样式
-import "./assets/styles/reset.css"
-import "./assets/styles/border.css"
+import "styles/reset.css"
+//  解决多次点击时300ms的延迟问题
+import "styles/border.css"
+//  引入iconfont的css
+import iconfont from "styles/iconfont.css"
 
 Vue.config.productionTip = false
 // 移动端300 毫秒点击延迟的问题
